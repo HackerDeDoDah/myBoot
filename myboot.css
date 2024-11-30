@@ -1,0 +1,715 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Custom styles for phones */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* Custom styles for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Custom styles for tablets */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Custom styles for desktops */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Custom styles for large desktops */
+}
+
+/* Extra extra large devices (very large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    /* Custom styles for very large desktops */
+}
+
+/* Basic grid container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+/* Grid items, with percentage-based widths */
+.col {
+    flex: 1 0 0%;
+    padding: 15px;
+}
+
+/* For small devices, use 50% width (2 columns) */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* For medium devices, use 33.33% width (3 columns) */
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* For large devices, use 25% width (4 columns) */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* For extra-large devices, use 20% width (5 columns) */
+@media (min-width: 1200px) {
+    .col-xl-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Default font size for small devices */
+body {
+    font-size: 16px;
+}
+
+/* Adjust font size for tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Adjust font size for desktops */
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Adjust font size for large desktops */
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Set max-width for different breakpoints */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+/* Margin utility classes */
+.m-1 {
+    margin: 0.25rem !important;
+}
+
+.m-2 {
+    margin: 0.5rem !important;
+}
+
+.m-3 {
+    margin: 1rem !important;
+}
+
+/* Padding utility classes */
+.p-1 {
+    padding: 0.25rem !important;
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+/* Hide on specific devices */
+.d-none {
+    display: none !important;
+}
+
+@media (min-width: 576px) {
+    .d-sm-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-md-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .d-lg-block {
+        display: block !important;
+    }
+}
+
+/* Default mobile navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+/* Show horizontal navbar on medium screens */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* Basic Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Button Variants */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+/* Button Sizes */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* Disabled State */
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+.card-footer {
+    text-align: right;
+}
+
+/* Flexbox alignment utilities */
+.d-flex {
+    display: flex !important;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+/* Flex grow/shrink */
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0 !important;
+}
+
+/* Image responsive class */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-size-base: 16px;
+    --spacing-base: 1rem;
+}
+
+/* Applying variables */
+body {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.container {
+    padding: var(--spacing-base);
+}
+
+/* Simple 12-column grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        grid-column: span 4;
+    }
+}
+
+/* Fade in/out */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* Slide-in animations */
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Dark Mode Variables */
+:root {
+    --background-color-light: #fff;
+    --text-color-light: #000;
+    
+    --background-color-dark: #343a40;
+    --text-color-dark: #f8f9fa;
+}
+
+/* Dark Mode Styles */
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.button {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark-mode .button {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Toggle dark mode based on user's preference */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color-dark);
+        color: var(--text-color-dark);
+    }
+}
+
+/* Input field styles */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Checkbox and radio button styling */
+.custom-checkbox, .custom-radio {
+    display: inline-block;
+    padding-left: 1.5rem;
+}
+
+.custom-checkbox input, .custom-radio input {
+    margin-right: 0.5rem;
+}
+
+/* Responsive table */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-top: 1px solid #dee2e6;
+}
+
+
+/* js
+
+
+document.querySelectorAll('.modal-toggle').forEach(btn => {
+    btn.addEventListener('click', function () {
+        const targetModal = document.querySelector(btn.dataset.target);
+        targetModal.classList.toggle('is-active');
+    });
+});
+
+
+document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', function () {
+        btn.closest('.modal').classList.remove('is-active');
+    });
+}); 
+
+*/
+
+
+
+/* html
+
+<svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+</svg>
+
+*/
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor; /* Allows color to inherit from text */
+    vertical-align: middle;
+}
+
+.icon-lg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem; /* Customize for different gutter sizes */
+}
+
+.grid-gutter-1 {
+    gap: 0.5rem;
+}
+
+.grid-gutter-2 {
+    gap: 1rem;
+}
+
+.grid-gutter-3 {
+    gap: 2rem;
+}
+
+/* Padding utilities */
+.p-0 { padding: 0; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+.p-4 { padding: 1.5rem; }
+.p-5 { padding: 2rem; }
+
+/* Margin utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+
+/* Flexbox alignment utilities */
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+
+/* Valid state */
+.form-control.is-valid {
+    border-color: #28a745;
+    background-color: #e6ffe6;
+}
+
+/* Invalid state */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-color: #ffe6e6;
+}
+
+/* Form validation messages */
+.valid-feedback {
+    display: block;
+    color: #28a745;
+}
+
+.invalid-feedback {
+    display: block;
+    color: #dc3545;
+}
+
+
+/* html 
+
+<button class="btn" aria-label="Submit form">Submit</button>
+
+<form>
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+</form> 
+
+*/
+
+
+/* Focus state */
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Default theme */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+/* Dark theme */
+body.dark-mode {
+    --background-color: #343a40;
+    --text-color: #f8f9fa;
+    --primary-color: #17a2b8;
+}
+
+/* Applying the theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Theme utility classes */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--secondary-color) !important;
+}
+
+
+/* html
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: #333;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head> 
+
+*/
+
+
+/* js
+
+document.querySelector('.modal-trigger').addEventListener('click', async () => {
+    const { openModal } = await import('./modal.js');
+    openModal();
+}); 
+
+*/
+
+
+/* Complex grid layout */
+.grid-complex {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.grid-complex .header {
+    grid-column: 1 / span 2;
+}
+
+.grid-complex .sidebar {
+    grid-column: 1;
+}
+
+.grid-complex .content {
+    grid-column: 2;
+}
+
+/* Additional breakpoints */
+@media (min-width: 640px) {
+    .col-sm {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .col-xxl {
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+}
