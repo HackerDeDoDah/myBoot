@@ -1,0 +1,3 @@
+myBoot cdn link
+
+https://cdn.jsdelivr.net/gh/HackerDeDoDah/myBoot@main/myboot.min.css
