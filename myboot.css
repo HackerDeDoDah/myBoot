@@ -641,3 +641,22 @@ body {
         max-width: 20%;
     }
 }
+.b-rad-1 {
+    border-radius: 2px;
+}
+
+.b-rad-2 {
+    border-radius: 4px;
+}
+
+.b-rad-3 {
+    border-radius: 8px;
+}
+
+.b-rad-4 {
+    border-radius: 10px;
+}
+
+.b-rad-5 {
+    border-radius: 16px;
+}
