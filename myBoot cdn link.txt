@@ -1,3 +1,6 @@
 myBoot cdn link
-
+CSS link...
 https://cdn.jsdelivr.net/gh/HackerDeDoDah/myBoot@main/myboot.min.css
+
+JS link...
+https://cdn.jsdelivr.net/gh/HackerDeDoDah/myBoot@main/myBoot.js
